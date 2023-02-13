@@ -1,5 +1,1586 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# dm 1.0.4.9002
+
+## Chore
+
+- Avoid running example without database connection.
+
+- Remove dead code.
+
+Closes #1197.
+
+- Turn symlink into plain file to fix `renv::restore()` on Windows.
+
+## Continuous integration
+
+- Avoid oldrel-4.
+
+- Use `--no-multiarch` for Windows 3.6 tests.
+
+## GHA
+
+- Mark GITHUB_PAT as 'custom'.
+
+## WIP
+
+- New key class (#259).
+
+- New class for prettier printing of keys (#244).
+
+## Bugfix
+
+- `cdm_select_tbl()` with multi-FKs between 2 tables (#122).
+
+- `cdm_select_tbl()` works again when multiple foreign keys are defined between two tables (#122).
+
+## Uncategorized
+
+- Merged cran-1.0.4 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1659 (#1659).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1652 (#1652).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1751 (#1751).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1776 (#1776).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1771 (#1771).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1741 (#1741).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1716 (#1716).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1740 (#1740).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1715 (#1715).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1714 (#1714).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1713 (#1713).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1698 (#1698).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1710 (#1710).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1707 (#1707).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1696 (#1696).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1686 (#1686).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1694 (#1694).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1689 (#1689).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1671 (#1671).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1640 (#1640).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1646 (#1646).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1637 (#1637).
+
+- Harmonize yaml formatting.
+
+- Revert changes to matrix section.
+
+- Merged cran-1.0.3 into main.
+
+- Merged cran-1.0.2 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1449 (#1449).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1511 (#1511).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1514 (#1514).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1459 (#1459).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1211 (#1211).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1518 (#1518).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1509 (#1509).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1455 (#1455).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1447 (#1447).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1452 (#1452).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1437 (#1437).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/975 (#975).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1434 (#1434).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1432 (#1432).
+
+- Merged cran-1.0.1 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1361 (#1361).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1354 (#1354).
+
+- Merge branch 'docs'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1353 (#1353).
+
+- Merged cran-1.0.0 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1338 (#1338).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1339 (#1339).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1324 (#1324).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1327 (#1327).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1335 (#1335).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1326 (#1326).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1330 (#1330).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1321 (#1321).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1325 (#1325).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1319 (#1319).
+
+- REVERT ME: Shut up GHA PRs for pillar \< 1.8.0.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1313 (#1313).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1315 (#1315).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1310 (#1310).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1303 (#1303).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1300 (#1300).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1299 (#1299).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1278 (#1278).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1294 (#1294).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1298 (#1298).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1292 (#1292).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1291 (#1291).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1288 (#1288).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1284 (#1284).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1282 (#1282).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1279 (#1279).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1275 (#1275).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1263 (#1263).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1253 (#1253).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1245 (#1245).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1255 (#1255).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1254 (#1254).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1247 (#1247).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1244 (#1244).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1250 (#1250).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1236 (#1236).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1237 (#1237).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1235 (#1235).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1234 (#1234).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1230 (#1230).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1194 (#1194).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1229 (#1229).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1228 (#1228).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1227 (#1227).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1226 (#1226).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1195 (#1195).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1193 (#1193).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1222 (#1222).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1214 (#1214).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1209 (#1209).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1219 (#1219).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1215 (#1215).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1208 (#1208).
+
+- Merged cran-0.3.0 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1103 (#1103).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1098 (#1098).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1161 (#1161).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1127 (#1127).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1160 (#1160).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1176 (#1176).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1175 (#1175).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1166 (#1166).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1186 (#1186).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1179 (#1179).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/912 (#912).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1182 (#1182).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1181 (#1181).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1136 (#1136).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1091 (#1091).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1169 (#1169).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1170 (#1170).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1158 (#1158).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1132 (#1132).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1164 (#1164).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1162 (#1162).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1163 (#1163).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1155 (#1155).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1157 (#1157).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1150 (#1150).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1149 (#1149).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1148 (#1148).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1133 (#1133).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1145 (#1145).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1081 (#1081).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1139 (#1139).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1120 (#1120).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1138 (#1138).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1123 (#1123).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1119 (#1119).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1121 (#1121).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1095 (#1095).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1114 (#1114).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1112 (#1112).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1118 (#1118).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1082 (#1082).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1102 (#1102).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1101 (#1101).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1100 (#1100).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1106 (#1106).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1088 (#1088).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1083 (#1083).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1066 (#1066).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1075 (#1075).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1079 (#1079).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1067 (#1067).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1056 (#1056).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1044 (#1044).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1024 (#1024).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1038 (#1038).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/993 (#993).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1033 (#1033).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1036 (#1036).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1034 (#1034).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1040 (#1040).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1037 (#1037).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1035 (#1035).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1032 (#1032).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1029 (#1029).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1018 (#1018).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1016 (#1016).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1012 (#1012).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1006 (#1006).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/517 (#517).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1001 (#1001).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/1000 (#1000).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/998 (#998).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/988 (#988).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/923 (#923).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/986 (#986).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/985 (#985).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/974 (#974).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/968 (#968).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/970 (#970).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/918 (#918).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/961 (#961).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/921 (#921).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/916 (#916).
+
+- Merged cran-0.2.8 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/827 (#827).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/868 (#868).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/907 (#907).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/865 (#865).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/863 (#863).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/857 (#857).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/852 (#852).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/855 (#855).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/853 (#853).
+
+- Avoid calling `dbAppendTable()` for zero-row tables (#847).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/848 (#848).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/846 (#846).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/840 (#840).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/829 (#829).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/832 (#832).
+
+- Merged cran-0.2.7 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/820 (#820).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/771 (#771).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/813 (#813).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/762 (#762).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/755 (#755).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/756 (#756).
+
+- New `dm_wrap()`, `dm_unwrap()`, `dm_nest_tbl()`, `dm_unnest_tbl()`, `dm_pack_tbl()` and `dm_unpack_tbl()` (#733, #737).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/735 (#735).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/722 (#722).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/731 (#731).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/736 (#736).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/708 (#708).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/716 (#716).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/709 (#709).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/715 (#715).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/712 (#712).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/711 (#711).
+
+- Merge branch 'b-ubuntu-workaround'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/703 (#703).
+
+- Merged cran-0.2.6 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/699 (#699).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/692 (#692).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/691 (#691).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/688 (#688).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/669 (#669).
+
+- Fix compatibility with dplyr 1.0.8 (#698).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/682 (#682).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/683 (#683).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/678 (#678).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/680 (#680).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/681 (#681).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/679 (#679).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/677 (#677).
+
+- Reduce parallelism.
+
+- Also check dev on cran-\* branches.
+
+- Update hash key for dev.
+
+- Remove R 3.3.
+
+- Merge branch 'docs'.
+
+- Merged cran-0.2.5 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/674 (#674).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/671 (#671).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/667 (#667).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/670 (#670).
+
+- Safeguard copy_dm_to() against cyclic graphs (#664).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/658 (#658).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/660 (#660).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/659 (#659).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/657 (#657).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/656 (#656).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/655 (#655).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/654 (#654).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/653 (#653).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/652 (#652).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/650 (#650).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/651 (#651).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/632 (#632).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/647 (#647).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/645 (#645).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/648 (#648).
+
+- Merge branch 'cran-0.2.4'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/638 (#638).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/636 (#636).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/631 (#631).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/633 (#633).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/628 (#628).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/625 (#625).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/623 (#623).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/627 (#627).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/616 (#616).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/624 (#624).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/605 (#605).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/617 (#617).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/610 (#610).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/572 (#572).
+
+- Establish compatibility with vctrs \> 0.3.8.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/613 (#613).
+
+- Update tests for pillar 1.6.2.
+
+- Add CI run for validating all new `dm` objects (#597).
+
+- Avoid generating invalid `dm` objects in some corner cases (#596).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/607 (#607).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/604 (#604).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/602 (#602).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/597 (#597).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/596 (#596).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/594 (#594).
+
+- Use `NO ACTION` instead of `CASCADE` in foreign key constraints to permit self-references.
+
+- Merge branch 'docs'.
+
+- Merged cran-0.2.3 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/589 (#589).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/590 (#590).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/588 (#588).
+
+- Merge branch 'cran-0.2.2'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/586 (#586).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/584 (#584).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/583 (#583).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/582 (#582).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/573 (#573).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/569 (#569).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/570 (#570).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/568 (#568).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/567 (#567).
+
+- Merged cran-0.2.1 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/562 (#562).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/561 (#561).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/560 (#560).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/559 (#559).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/558 (#558).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/556 (#556).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/557 (#557).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/555 (#555).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/554 (#554).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/553 (#553).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/552 (#552).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/551 (#551).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/550 (#550).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/549 (#549).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/548 (#548).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/547 (#547).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/545 (#545).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/543 (#543).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/542 (#542).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/541 (#541).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/540 (#540).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/514 (#514).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/539 (#539).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/537 (#537).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/538 (#538).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/536 (#536).
+
+- Merge branch 'docs'.
+
+- Merged cran-0.2.0 into main.
+
+- Merge branch 'docs-509-compound'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/531 (#531).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/530 (#530).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/528 (#528).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/529 (#529).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/525 (#525).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/516 (#516).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/526 (#526).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/520 (#520).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/522 (#522).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/515 (#515).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/513 (#513).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/512 (#512).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/335 (#335).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/507 (#507).
+
+- Merged cran-0.1.13 into main.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/503 (#503).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/501 (#501).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/499 (#499).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/497 (#497).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/494 (#494).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/488 (#488).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/444 (#444).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/496 (#496).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/484 (#484).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/486 (#486).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/493 (#493).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/492 (#492).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/491 (#491).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/482 (#482).
+
+- Merge branch 'cran-0.1.12'.
+
+- Merge branch 'cran-0.1.11'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/472 (#472).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/478 (#478).
+
+- Merge branch 'f-dynamic-dep'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/476 (#476).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/477 (#477).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/475 (#475).
+
+- Merge cran-0.1.10.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/471 (#471).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/467 (#467).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/468 (#468).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/457 (#457).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/454 (#454).
+
+- Merge branch 'docs'.
+
+- Merge cran-0.1.9.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/461 (#461).
+
+- Merge branch 'cran-0.1.8'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/458 (#458).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/411 (#411).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/455 (#455).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/452 (#452).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/451 (#451).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/448 (#448).
+
+- Merge branch 'docs' into master.
+
+- Merge cran-0.1.7.
+
+- Suggest RMariaDB 1.0.10 to work around timeout with `R CMD check`.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/439 (#439).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/428 (#428).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/433 (#433).
+
+- Merge cran-0.1.6.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/430 (#430).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/429 (#429).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/422 (#422).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/419 (#419).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/421 (#421).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/420 (#420).
+
+- `dm_financial()` no longer prints message about `learn_keys = FALSE`.
+
+- Examples involving `dm_financial()` are not run if connection can't be established.
+
+- `dm_rows_update()` and related functions now use the primary keys defined in `x` for establishing matching rows.
+
+- Merge branch 'docs'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/417 (#417).
+
+- Fix database tests on CI (#416).
+
+- Merge branch 'f-without-suggests'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/408 (#408).
+
+- Merge branch 'f-315-maria'.
+
+Closes #315.
+
+- `dm_paste()` generates self-contained code (#401).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/410 (#410).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/391 (#391).
+
+- Avoid `src_sqlite()` in examples (#372).
+
+- Implement `rows_truncate()` for databases.
+
+- `rows_insert()` works if column names consist of SQL keywords (#409).
+
+- `collect()` works on a zoomed dm, with a message.
+
+- The data model is drawn in a more compact way if it comprises of multiple connected components.
+
+- Cycles in other connected components don't affect filtering in a cycle-free component.
+
+- `dm_add_pk(check = TRUE)` gives a better error message.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/399 (#399).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/398 (#398).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/364 (#364).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/396 (#396).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/392 (#392).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/393 (#393).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/387 (#387).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/390 (#390).
+
+- Require dplyr \>= 1.0.0.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/383 (#383).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/381 (#381).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/380 (#380).
+
+- Merge branch 'docs'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/369 (#369).
+
+- Merge branch 'docs'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/319 (#319).
+
+- Merge branch 'r-0.1.3-now'.
+
+- Avoid `src_sqlite()` in vignettes (#372).
+
+- Rename vignettes (#349).
+
+- Rename error class `"dm_error_tables_not_neighbours"` to `"dm_error_tables_not_neighbors"`.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/320 (#320).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/356 (#356).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/354 (#354).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/353 (#353).
+
+- Fix compatibility with dplyr 1.0.0.
+
+- Merge branch 'docs'.
+
+- `dm_from_src()` gives a warning if tables cannot be accessed with `table_name = NULL`. If `table_names` is set, an error is raised instead (#348).
+
+- `dm_from_src()` gains `learn_keys` argument to control querying of primary and foreign keys from the database (#340).
+
+- Remove use of deprecated `src_df()` (#336).
+
+- Fix visualization of column that acts as a foreign key more than once (#37).
+
+- `dm_add_pk()`, `dm_rm_pk()`, `dm_add_fk()` and `dm_rm_fk()` are now stricter when keys exists or when attempting to remove keys that don't exist. A more relaxed mode of operation may be added later (#214).
+
+- Testing on SQLite, Postgres, RMariaDB, and SQL Server, requires development versions and various pull requests.
+
+- `examine_cardinality()`, `dm_examine_constraints()` and `enum_pk_candidates()` now work for columns named `n`.
+
+- `dm_examine_constraints()` now prints a different message if a dm has no constraints defined.
+
+- Fix lifecycle warning in `dm_paste()`.
+
+- `dm_set_key_constraints()` (and by extension `dm_copy_to(set_key_constraints = TRUE)`) now quote identifiers for the SQL that creates foreign keys on the database.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/334 (#334).
+
+- Disambiguation message now only lists column names for easier copy-pasting.
+
+- UNDO: Vignettes only convert diagrams to SVG when run in pkgdown (#318).
+
+- Vignettes only convert diagrams to SVG when run in pkgdown (#318).
+
+- `dm_draw()` output is shown in examples (#251).
+
+- Implement `pull()`, `group_data()`, `group_indices()`, `group_vars()`, `group_keys()` and `groups()` for `"zoomed_dm"`.
+
+- Fix compatibility with dplyr 1.0.0 (#203).
+
+- Merge branch 'f-multi-src-2'.
+
+- Merge branch 'docs'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/314 (#314).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/325 (#325).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/327 (#327).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/313 (#313).
+
+- `dm_from_src(schema = "...")` works on Postgres if `search_path` is not set on the connection.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/324 (#324).
+
+- New article "{dm} and databases".
+
+- `dm_nycflights13(subset = TRUE)` memoizes subset and also reduces the size of the `weather` table.
+
+- New `dm_ptype()`.
+
+- New `dm_financial()`.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/308 (#308).
+
+- Merge branch 'Issue-185'.
+
+Closes #306.
+
+- New `dm_financial_sqlite()`.
+
+- `compute.zoomed_dm()` no longer throws an error.
+
+- Merge branch 'docs'.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/298 (#298).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/299 (#299).
+
+- Remove DT import (#295).
+
+- Merge branch 'r-0.1.1'.
+
+- Merge branch 'r-0.1.1'.
+
+- `check_key()` now also works on a zoomed dm.
+
+- `dm_from_src()` works for databases other than Postgres and MSSQL (#288).
+
+- Merge branch 'r-0.1.1'.
+
+- Don't implement `nest_join()` for now (#168).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/282 (#282).
+
+- Reorganize tests (#76).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/261 (#261).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/260 (#260).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/263 (#263).
+
+- Expand definitions of deprecated functions (#204).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/279 (#279).
+
+- Merge branch 'r-0.1.1'.
+
+- Merge branch 'r-0.1.1'.
+
+- Implement `format.dm()`.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/273 (#273).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/274 (#274).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/277 (#277).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/271 (#271).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/272 (#272).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/270 (#270).
+
+- Table names must be unique.
+
+- `dm_examine_constraints()` formats the problems nicely.
+
+- Ease tidyselect version requirement to 0.2.5.
+
+- Add experimental schema support for `dm_from_src()`.
+
+- Tweak news for version 0.1.0 (#255).
+
+Tweak news for version 0.1.0
+
+- `dm_from_src()` also accepts a DBI connection (#256).
+
+- `dm_learn_from_db()` supports arguments `schema` and `table_type` for Postgres.
+
+- Shorten titles (#254).
+
+shorten titles
+
+- Help pages for dplyr methods (#209).
+
+- Migration guide from dm \<= 0.0.5 (#234).
+
+- `filter.zoomed_dm()` no longer sets the filter.
+
+- Prepare `dm_examine_constraints()` and other key-related functions for compound keys (#239).
+
+- Outstanding points from earlier (#248).
+
+outstanding points from earlier
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/240 (#240).
+
+- {tidyselect} interface for setting colors (#162).
+
+- Revert dm::copy_to.src_sql() (#235).
+
+revert dm::copy_to.src_sql()
+
+- API overhaul (#233): `dm_insert_zoomed()`, `dm_update_zoomed()` and `dm_discard_zoomed()`; `check_()` -\> `examine_()`; `dm_get_filters()` -\> `dm_get_filter()`.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/228 (#228).
+
+- New `$.zoomed_dm()`, `[.zoomed_dm()`, `[[.zoomed_dm()`, `length.zoomed_dm()`, `names.zoomed_dm()`, `tbl_vars.zoomed_dm()` (#199, #216).
+
+- New `as.list()` methods (#213).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/221 (#221).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/215 (#215).
+
+- Complete missing returns and code examples (#187).
+
+complete missing returns and code examples
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/189 (#189).
+
+- More efficient `check_key()` for databases (#208).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/207 (#207).
+
+- Testing for R \>= 3.3 and for debug versions.
+
+- Verify error msgs (#195).
+
+Verify error msgs
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/184 (#184).
+
+- `check_key()` no longer maps empty selection list to all columns.
+
+- `check_key()` supports tidyselect (#188).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/127 (#127).
+
+- `decompose_table()` uses tidyselect (#194).
+
+- Implement `copy_to()` for `dm` objects (#129).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/198 (#198).
+
+- New `cdm_paste()` (#160).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/15 (#15).
+
+- Fix zooming into table that uses an FK column as primary key (#193).
+
+- Return `ref_table` column in `cdm_check_constraints()` (#178).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/142 (#142).
+
+- Removed data_model components in vignettes (Issue #170) (#180).
+
+Removed data_model components in vignettes (Issue #170)
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/179 (#179).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/172 (#172).
+
+- Extend `validate_dm()` (#173).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/175 (#175).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/182 (#182).
+
+- Remove {stringr} dependency (#183).
+
+- Some full stops added to params (#169).
+
+Some full stops added to params
+
+- New demo.
+
+- Test update to setting_up_dm (#133).
+
+Test update to setting_up_dm
+
+- Add explanation for empty `dm` (#100).
+
+- Redesign constructors and validators (#69).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/156 (#156).
+
+- `compute.dm()` applies filters and calls `compute()` on all tables (#135).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/152 (#152).
+
+- Remove `pull()`, because it doesn't return a dm.
+
+- `dimnames()`, `colnames()`, `dim()`, `distinct()`, `arrange()`, `slice()`, `pull()`, `separate()` and `unite()` implemented for zoomed dm-s (#130).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/131 (#131).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/146 (#146).
+
+- Joins use the same column name disambiguation algorithm as `cdm_flatten_to_tbl()` (#147).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/132 (#132).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/121 (#121).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/125 (#125).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/128 (#128).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/120 (#120).
+
+- Avoid 'cdm_get_data_model()' in vignettes (#119).
+
+avoid 'cdm_get_data_model()' in vignettes
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/108 (#108).
+
+- Integrate code from {datamodelr} in this package (@bergant, #111).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/106 (#106).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/109 (#109).
+
+- Repair rownames problem in print output of 'zoomed_dm' class.
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/104 (#104).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/105 (#105).
+
+- Support {tidyselect}-syntax for `cdm_flatten_to_tbl()` and `cdm_squash_to_tbl()` (#101).
+
+- Zoom to table using 'cdm_zoom_to_tbl()'.
+
+- Zoom out using 'cdm_zoom_out()'.
+
+- Subclass 'zoomed_dm' and methods for 'print()' and 'format()'.
+
+- Internal: discard 'new_dm2()'.
+
+- More accurate documentation of filtering operation.
+
+- Support empty `dm` objects via `dm()` and `new_dm()` (#96).
+
+- `cdm_flatten_to_tbl()` now flattens all immediate neighbors by default (#95).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/94 (#94).
+
+- Use new storage format internally.
+
+- New `cdm_add_tbl()` and `cdm_rm_tbl()` (#90).
+
+- PR comments from #78 (#87).
+
+PR comments from #78
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/86 (#86).
+
+- Selection and renaming of tables and columns uses new storage format (#54).
+
+- A `dm` object is defined using a nested tibble, one row per table (#57).
+
+- `cdm_enum_pk_candidates()` and `cdm_enum_fk_candidates()` both show candidates first (#85).
+
+- `cdm_flatten_to_tbl()` works only in the immediate neighborhood (#75).
+
+- New `cdm_squash_to_tbl()` implements recursive flattening for left, inner and full join (#75).
+
+- Updated readme and introduction vignette (#72, @cutterkom).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/82 (#82).
+
+- `cdm_copy_to()` gains `table_names` argument (#79).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/83 (#83).
+
+- Improve error message when calling `cdm_add_pk()` with a missing column.
+
+- Use caching to improve loading times.
+
+- Run some tests only for one source (#76).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/68 (#68).
+
+- Improve error messages for `cdm_join_to_tbl()` and `cdm_flatten_to_tbl()` in the presence of cycles or disconnected tables (#74).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/67 (#67).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/66 (#66).
+
+- Add flatting argument and example with cdm_apply_filters (#61).
+
+add flatting argument and example with cdm_apply_filters
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/58 (#58).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/60 (#60).
+
+- Shorten message in `cdm_disambiguate_cols()`.
+
+- `cdm_flatten_to_tbl()` disambiguates only the necessary columns.
+
+- When flattening, the column name of the LHS (child) table is used (#52).
+
+- Fix formatting in `enum_pk_candidates()` for character data.
+
+- `cdm_add_pk()` and `cdm_add_fk()` no longer check data integrity by default.
+
+- Explicitly checking that the `join` argument is a function, to avoid surprises when the caller passes data.
+
+- `cdm_copy_to()` works correctly with filtered `dm` objects.
+
+- `cdm_apply_filters()` actually resets the filter conditions.
+
+- A more detailed README file and a vignette for filtering (#29, @cutterkom).
+
+- `cdm_draw()` no longer supports the `table_names` argument, use `cdm_select_tbl()`.
+
+- Copying a `dm` to a database now creates indexes for all primary and foreign keys.
+
+- Adapt to tidyr \>= 1.0.0.
+
+- New `cdm_select()` (#50).
+
+- Numeric subsetting is supported again so that the RStudio IDE can display `dm` objects (#53).
+
+- New `length.dm()` and `length<-.dm()` (#53).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/48 (#48).
+
+- Issues from f-disambiguate (#51).
+
+issues from f-disambiguate
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/49 (#49).
+
+- New `cdm_disambiguate_cols()` (#40).
+
+- Outstanding issues from improve filter (#42).
+
+Outstanding issues from improve filter
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/43 (#43).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/39 (#39).
+
+- New `str.dm()` .
+
+- Remove `cdm_find_conn_tbls()` and the `all_connected` argument to `cdm_select()` (#35).
+
+- `browse_docs()` opens the pkgdown website (#36).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/34 (#34).
+
+- `as_dm()` now also accepts a list of remote tables (#30).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/31 (#31).
+
+- Using simpler internal data structure to store primary and foreign key relations (#26).
+
+- Use {tidyselect} syntax for `cdm_rename_tbl()` and `cdm_select_tbl()` (#14).
+
+- Numeric subsetting in `[` and `[[` now raises a clear error (#18).
+
+- New `nse_function()` replaces `h()` for marking functions as NSE to avoid R CMD check warnings.
+
+- Simplified internal data structure so that creation of new operations that update a dm becomes easier.
+
+- Unexport `cdm_set_key_constraints()`.
+
+- When copying a dm to a database, `NOT NULL` constraints are set at creation of the table.
+
+- The tibbles returned by `cdm_enum_fk_candidates()` and `cdm_enum_pk_candidates()` contain a `why` column that explains the reasons for rejection in a human-readable form (#12).
+
+- Using {RPostgres} instead of {RPostgreSQL} for testing.
+
+- Fix doc of 'cdm_draw()' (#21).
+
+- Improve compatibility with RPostgres.
+
+- Fix corner case for calculating join list: works if table isn't related to other tables.
+
+- `create_graph_from_dm()` no longer fails in the presence of cycles (#10).
+
+- PLACEHOLDER https://github.com/owenjonesuob/dm/pull/7 (#7).
+
+- Only suggest {RSQLite}.
+
+- `cdm_filter()` no longer requires a primary key.
+
+- `decompose_table()` adds the new column in the table to the end.
+
+- Rename `cdm_select()` to `cdm_select_tbl()`.
+
+- `cdm_nycflights13()` now has `cycle = FALSE` as default.
+
+- `$`, `[[`, `[`, and `names()` now implemented for dm objects (read-only).
+
+- `tbl()` now fails if the table is not part of the data model.
+
+- `cdm_select()` uses tidyselect.
+
+- New `enum_pk_candidates()`.
+
+- Rename `cdm_check_for_*()` to `cdm_enum_*()`.
+
+- Merge remote-tracking branch 'gitlab/documentation-try-again'.
+
+- Add rquery paragraph (#2).
+
+Add rquery paragraph
+
+- Update pkgdown README.
+
+- Merge branch 'f-only-src-not-con' into 'master'.
+
+F only src not con
+
+Closes #64
+
+See merge request g/cynkra/public/dm!31
+
+- Merge branch 'f-no-tables-names-in-copy-to' into 'master'.
+
+F no tables names in copy to
+
+Closes #71
+
+See merge request g/cynkra/public/dm!32
+
+- Merge branch 'f-update-readme' into 'master'.
+
+F update readme
+
+See merge request g/cynkra/public/dm!30
+
+- Updates in the pkgdown documentation.
+
+- New "Get started" vignette.
+
+- Repair package so the R CMD check passes.
+
+- Merge branch 'f-learn-from-db' into 'master'.
+
+Learn 'dm'-objects from MSSQL and Postgres databases (!24).
+
+See merge request g/cynkra/public/dm!24
+
+- Merge branch 'f-copy-to' into 'master'.
+
+implementation of 'cdm_copy_to()' for MSSQL
+
+Closes #38
+
+See merge request g/cynkra/public/dm!21
+
+- Merge branch 'f-checks-for-src-and-con' into 'master'.
+
+support both `src` and `con` objects as `dm$src`
+
+See merge request g/cynkra/public/dm!23
+
+- Merge branch 'f-helpers' into 'master'.
+
+New helper functions
+
+See merge request g/cynkra/public/dm!22
+
+- Handling `data_model` part more systematically (#49).
+
+- Merge branch 'f-filter-special-case' into 'master'.
+
+earlier possible returns for 'cdm_filter()'
+
+Closes #45
+
+See merge request g/cynkra/public/dm!19
+
+- Merge branch 'f-error-handling' into 'master'.
+
+Handle errors more systematically
+
+See merge request g/cynkra/public/dm!18
+
+- Merge branch 'b-rm-semi-join-cruft' into 'master'.
+
+'cdm_semi_join()' with 'filter' as complete reduced table
+
+Closes #44
+
+See merge request g/cynkra/public/dm!14
+
+- Merge branch 'f-select-tables-from-dm-as-list' into 'master'.
+
+function `cdm_select()` to focus on part of `dm`-object or chose unconnected tables from it
+
+Closes #24
+
+See merge request g/cynkra/public/dm!17
+
+- Merge branch 'b-foreign-keys-ref-col' into 'master'.
+
+remove arguments 'ref_column' and 'set_ref_pk' in function 'cdm_add_fk()'
+
+Closes #40
+
+See merge request g/cynkra/public/dm!15
+
+- Merge branch 'b-postgres-integer64' into 'master'.
+
+avoid postgres automatically creating integer64
+
+Closes #15
+
+See merge request g/cynkra/public/dm!16
+
+- New `cdm_semi_join()`.
+
+- Merge branch 'f-dm-num-rows' into 'master'.
+
+F dm num rows
+
+See merge request g/cynkra/public/dm!13
+
+- Fix color order with `dm_set_color()`.
+
+- Compute joins correctly for arbitrary cycle-free relationships (#16).
+
+- Tweak drawing API: `cdm_draw()`, `cdm_get_colors()`, `cdm_set_colors()` and `cdm_available_colors()` (!8).
+
+- Merge branch 'f-bfs' into 'master'.
+
+Use BFS
+
+Closes #16
+
+See merge request g/cynkra/public/dm!12
+
+- Print number of rows.
+
+- Merge branch 'f-join-logic-and-filter' into 'master'.
+
+Implement join logic and filter
+
+Closes #19
+
+See merge request g/cynkra/public/dm!11
+
+- Merge branch 'f-join' into 'master'.
+
+F join
+
+See merge request g/cynkra/public/dm!9
+
+- Merge branch 'f-draw-dm-object' into 'master'.
+
+Draw schema of data model part of `dm`-object
+
+See merge request g/cynkra/public/dm!7
+
+- Merge branch 'f-manage-foreign-keys' into 'master'.
+
+F manage foreign keys
+
+See merge request g/cynkra/public/dm!6
+
+- Rename `dm` to `cdm` (#28).
+
+- Tests are independent of database versions (#26).
+
+- Stub for "Getting started" vignette (#27).
+
+- Rename `primary_key` to `pk` and `foreign_key` to `fk`.
+
+- Facilities to manage primary keys in a `dm` object: `dm_add_primary_key()`, `dm_remove_primary_key()`, `dm_check_*()`, `dm_get_primary_key_column_from_table()` (#17).
+
+- Merge branch 'f-manage-primary-keys' into 'master'.
+
+F manage primary keys
+
+See merge request g/cynkra/public/dm!4
+
+- Merge branch 'f-further-tests' into 'master'.
+
+F further tests
+
+See merge request g/cynkra/public/dm!3
+
+- Draft for `dm` class with constructor, validator etc., incomplete (#10).
+
+- Merge branch 'f-dm-class'.
+
+- New `rowSelector()` and `selectable()` modules.
+
+- New `decompose_table()` to split a table in two.
+
+- New `reunite_parent_child_from_list()`, inverse to `decompose_table()`.
+
+- New `reunite_parent_child()`, as a shortcut for `reunite_parent_child_from_list()`.
+
+
 # dm 1.0.4.9001
 
 - Merged cran-1.0.4 into main.
